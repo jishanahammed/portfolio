@@ -12,7 +12,7 @@ const Contact = () => {
             <FaPhoneAlt className="text-blue-500" size={24} />
             <div>
               <h3 className="text-xl font-semibold">Give us a call</h3>
-              <p className="text-lg">+61 3 8376 6284</p>
+              <p className="text-md">+8801840019826</p>
             </div>
           </div>
 
@@ -21,7 +21,7 @@ const Contact = () => {
             <FaEnvelope className="text-blue-500" size={24} />
             <div>
               <h3 className="text-xl font-semibold">Email us</h3>
-              <p className="text-lg">contact@domain.com</p>
+              <p className="text-md">contact@domain.com</p>
             </div>
           </div>
 
@@ -30,7 +30,7 @@ const Contact = () => {
             <FaMapMarkerAlt className="text-blue-500" size={24} />
             <div>
               <h3 className="text-xl font-semibold">Visit us</h3>
-              <p className="text-lg">
+              <p className="text-md">
                 121 King Street, Melbourne<br />
                 Victoria 3000, Australia
               </p>
@@ -46,9 +46,9 @@ const Contact = () => {
                 href="https://wa.me/61383766284"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg hover:text-green-400"
+                className="text-md hover:text-green-400"
               >
-                +61 3 8376 6284
+               +8801840019826
               </a>
             </div>
           </div>

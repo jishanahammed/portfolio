@@ -5,7 +5,7 @@ import profileImage from '../assets/heroImage.jpg';
 
 const Hero = () => {
   return (
-    <section className=" text-gray-900 py-16 md:py-24">
+    <section className=" text-gray-900 py-16 md:py-24" id="Home">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left Side: Introduction */}
         <div className="flex flex-col items-start space-y-6 md:w-1/2">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/jishan8.png";
+import { Link } from 'react-scroll';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,7 +19,12 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-8 font-medium">
           {["Home", "Services", "Project", "Pricing", "Testimonial", "Contact Us"].map((item, index) => (
             <li key={index} className="hover:text-blue-400 cursor-pointer">
-              <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
+              <Link
+              to={`#${item.toLowerCase().replace(/\s+/g, '-')}`}
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-blue-500"
+               >{item}</Link>
             </li>
           ))}
         </ul>
