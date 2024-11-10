@@ -3,8 +3,8 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/
 
 const Contact = () => {
   return (
-    <section className="bg-gray-100 text-gray-700 py-16">
-      <div className="max-w-full mx-auto px-6">
+    <section className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-50 py-16 ">
+      <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-16">
           {/* Phone Number */}

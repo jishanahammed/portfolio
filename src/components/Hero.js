@@ -1,12 +1,12 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { GoArrowRight } from "react-icons/go";
-import profileImage from '../assets/heroImage.jpg'; 
+import profileImage from '../assets/deployment.png'; 
 
 const Hero = () => {
   return (
-    <section className=" text-gray-900 py-16 md:py-24" id="Home">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <section className=" text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 pt-28 pb-28 md:pt-44 md:pb-28" id="Home">
+      <div className="max-w-7xl mx-auto  px-4 flex flex-col md:flex-row items-center justify-between">
         {/* Left Side: Introduction */}
         <div className="flex flex-col items-start space-y-6 md:w-1/2">
         <h1 className="text-2xl md:text-2xl font-bold">
@@ -22,18 +22,18 @@ const Hero = () => {
             <span className="text-blue-400">Next.js</span>.
           </p>
           <p>
-            Over 5 years of expertise in web application development, database management, and ERP software. Proficient in <span className="text-blue-400">C#</span>, <span className="text-blue-400">ASP.NET MVC</span>, <span className="text-blue-400">ASP.NET Core</span>, <span className="text-blue-400">Web API</span>, <span className="text-blue-400">MSSQL</span>, <span className="text-blue-400">React.js</span>, <span className="text-blue-400">Next.js</span>, and <span className="text-blue-400">Redux Toolkit</span>.
+            Over 5 years of expertise in web application development, database management, and ERP software. Proficient in <span className="text-blue-400">C#</span>, <span className="text-blue-400">ASP.NET MVC</span>, <span className="text-blue-400">ASP.NET Core</span>, <span className="text-blue-400">Web API</span>, <span className="text-blue-400">MSSQL</span>, <span className="text-blue-400">React.js</span>, <span className="text-blue-400">Next.js ,Tailwind CSS</span> and <span className="text-blue-400">Redux Toolkit</span>.
           </p>
           <div className="flex space-x-10 mt-6">
             <a
               href="#contact"
-              className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-lg shadow"
+              className="bg-blue-500 hover:bg-blue-500 text-white py-2 px-4 rounded-lg shadow"
             >
               Contact Me
             </a>
             <a
               href="#projects"
-              className=" flex items-center text-blue-600 font-bold"
+              className=" flex items-center text-blue-500 font-bold"
             >
               View My Work <GoArrowRight className='ml-3'/>
             </a>
@@ -42,11 +42,11 @@ const Hero = () => {
         </div>
 
         {/* Right Side: Profile Image */}
-        <div className="mt-12 md:mt-0 md:w-1/2 flex justify-center">
+        <div className="mt-12 md:mt-0 flex justify-center">
           <img
             src={profileImage}
             alt="Full-Stack Developer"
-            className="w-full max-w-xs md:max-w-md rounded-full shadow-lg border border-blue-500"
+            className="w-full max-w-xs md:max-w-full "
           />
         </div>
       </div>

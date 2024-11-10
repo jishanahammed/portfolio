@@ -6,9 +6,9 @@ const Layout = ({ children }) => {
   return (
     <div className="flex">
      
-      <div className="flex-1 flex flex-col min-h-screen">
+      <div className="flex-1 flex flex-col min-h-screen dark:bg-gray-900">
         <Navbar/>
-        <main className="max-w-full mx-auto mt-10  ">{children}</main>
+        <main className="w-full mx-auto">{children}</main>
       </div>
     </div>
   );
