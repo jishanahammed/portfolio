@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { GoArrowRight } from "react-icons/go";
 import profileImage from '../assets/deployment.png'; 
+import Social from './Social';
 
 const Hero = () => {
   return (
@@ -49,6 +50,7 @@ const Hero = () => {
             className="w-full max-w-xs md:max-w-full "
           />
         </div>
+      
       </div>
     </section>
   );

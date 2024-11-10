@@ -71,7 +71,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 font-medium">
-          {["Home", "Services", "Project", "Pricing", "Testimonial", "Contact Us"].map((item, index) => (
+          {["Home", "Services", "Project", "Contact Us"].map((item, index) => (
             <li key={index} className="hover:text-blue-400 dark:text-gray-100 cursor-pointer">
               <Link
                 to={item.toLowerCase().replace(/\s+/g, "-")}
