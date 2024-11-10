@@ -5,7 +5,7 @@ import profileImage from '../assets/deployment.png';
 
 const Hero = () => {
   return (
-    <section className=" text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 pt-28 pb-28 md:pt-44 md:pb-28" id="Home">
+    <section className=" text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 pt-28 pb-20 md:pt-44 md:pb-28" id="Home">
       <div className="max-w-7xl mx-auto  px-4 flex flex-col md:flex-row items-center justify-between">
         {/* Left Side: Introduction */}
         <div className="flex flex-col items-start space-y-6 md:w-1/2">

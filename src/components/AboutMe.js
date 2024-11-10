@@ -25,7 +25,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <section className="about-me py-16  dark:bg-gray-900 dark:text-white">
+    <section className="about-me pt-28  dark:bg-gray-900 dark:text-white">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Section Title */}
         <div className="text-left mb-16 section-title">
@@ -54,7 +54,7 @@ const AboutMe = () => {
             Full-Stack ASP.NET Developer
             Experienced Software Engineer specializing in Web Application , REST APIs, React, and Next.js.
             </p>
-            <p className="mt-4 text-gray-700">
+            <p className="mt-4 text-gray-700 dark:text-gray-400">
             Experienced Software Engineer with over 5+ years of expertise in web application development,
              database management, testing, server configuration, and ERP software. Proficient in C#, ASP.NET MVC,
               ASP.NET Core, Web API, MSSQL Server, stored procedures, React.js, Next.js, Redux Toolkit. Skilled in utilizing RDLC,

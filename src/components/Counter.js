@@ -59,7 +59,7 @@ const Counter = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="counter py-16  dark:bg-gray-900 ">
+    <section ref={sectionRef} className="counter pt-28  dark:bg-gray-900 ">
       <div className="container max-w-7xl mx-auto px-4 bg-blue-500 dark:bg-gray-900  py-10 rounded-lg">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {counters.map((counter, index) => (
