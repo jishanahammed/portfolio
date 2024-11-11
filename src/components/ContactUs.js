@@ -35,7 +35,7 @@ const Contact = () => {
             <FaEnvelope className="text-blue-500" size={24} />
             <div>
               <h3 className="text-xl font-semibold">Email us</h3>
-              <p className="text-md">contact@domain.com</p>
+              <p className="text-md">jishan.bd46@gmail.com</p>
             </div>
           </div>
 
@@ -45,8 +45,8 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-semibold">Visit us</h3>
               <p className="text-md">
-                121 King Street, Melbourne<br />
-                Victoria 3000, Australia
+                Baish Bari Rd, West Kazipara <br />
+                Mirpur, Dhaka 1216
               </p>
             </div>
           </div>
