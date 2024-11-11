@@ -42,7 +42,8 @@ const AboutMe = () => {
           <div className=" relative ">
             <img src={profileImage} alt="about" className="w-full rounded-lg border" />
             <a
-              href="#"
+              href="/Md.Jishan_Ahammed_Resume.pdf"
+               download="Md.Jishan_Ahammed_Resume.pdf"
               className="absolute left-[2px] md:left-[-26px] top-[-10px] w-20 h-20 flex items-center justify-center rounded-full bg-blue-500 text-white font-semibold text-lg border-2 border-blue-500"
             >
               Hire Me
