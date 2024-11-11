@@ -10,10 +10,11 @@ import {
   FaSkype
 } from 'react-icons/fa';
 import Social from './Social';
-
+import { Element } from "react-scroll";
 const Contact = () => {
   return (
-    <section className="bg-gray-200 dark:bg-gray-900 text-gray-700 dark:text-gray-50 py-16">
+    <Element name="contact-us">
+    <section className="bg-gray-200 dark:bg-gray-900 text-gray-700 dark:text-gray-50 pt-28 pb-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Title */}
         <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
@@ -74,6 +75,7 @@ const Contact = () => {
      
       </div>
     </section>
+    </Element>
   );
 };
 

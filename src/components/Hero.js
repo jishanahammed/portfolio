@@ -3,9 +3,10 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { GoArrowRight } from "react-icons/go";
 import profileImage from '../assets/deployment.png'; 
 import Social from './Social';
-
+import { Element, Link } from "react-scroll";
 const Hero = () => {
   return (
+    <Element name="home">
     <section className=" text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 pt-28 pb-20 md:pt-44 md:pb-28" id="Home">
       <div className="max-w-7xl mx-auto  px-4 flex flex-col md:flex-row items-center justify-between">
         {/* Left Side: Introduction */}
@@ -19,25 +20,38 @@ const Hero = () => {
           <p className="text-lg md:text-xl mt-4">
             Experienced Software Engineer specializing in <span className="text-blue-400">Web Application </span>,{' '}
             <span className="text-blue-400">REST APIs</span>,{' '}
+            <span className="text-blue-400">jQuery</span>,{' '}
+            <span className="text-blue-400">Ajax</span>,{' '}
             <span className="text-blue-400">React</span>, and{' '}
             <span className="text-blue-400">Next.js</span>.
           </p>
           <p>
-            Over 5 years of expertise in web application development, database management, and ERP software. Proficient in <span className="text-blue-400">C#</span>, <span className="text-blue-400">ASP.NET MVC</span>, <span className="text-blue-400">ASP.NET Core</span>, <span className="text-blue-400">Web API</span>, <span className="text-blue-400">MSSQL</span>, <span className="text-blue-400">React.js</span>, <span className="text-blue-400">Next.js ,Tailwind CSS</span> and <span className="text-blue-400">Redux Toolkit</span>.
+            Over 5 years of expertise in web application development, database management, and ERP software. Proficient in 
+            <span className="text-blue-400"> C#</span>,
+             <span className="text-blue-400"> ASP.NET MVC</span>,
+              <span className="text-blue-400"> ASP.NET Core</span>, <span className="text-blue-400"> Web API</span>, <span className="text-blue-400"> MSSQL</span>, <span className="text-blue-400"> jQuery</span>,<span className="text-blue-400"> Ajax</span>, <span className="text-blue-400"> React.js</span>, 
+                 <span className="text-blue-400"> Next.js , Tailwind CSS</span> and <span className="text-blue-400">Redux Toolkit</span>.
           </p>
           <div className="flex space-x-10 mt-6">
-            <a
-              href="#contact"
+            <Link
+              to="contact-us"
+              smooth={true}
+              duration={700} 
+              offset={-80}
               className="bg-blue-500 hover:bg-blue-500 text-white py-2 px-4 rounded-lg shadow"
             >
               Contact Me
-            </a>
-            <a
-              href="#projects"
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={700} 
+              offset={-80}
               className=" flex items-center text-blue-500 font-bold"
             >
+             
               View My Work <GoArrowRight className='ml-3'/>
-            </a>
+              </Link>
           </div>
      
         </div>
@@ -53,6 +67,7 @@ const Hero = () => {
       
       </div>
     </section>
+    </Element>
   );
 };
 

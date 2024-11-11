@@ -1,6 +1,6 @@
 import React from 'react';
 import profileImage from '../assets/heroImage.jpg'; 
-
+import { Element } from "react-scroll";
 const AboutMe = () => {
   const skills = [
     { name: 'Asp.Net', level: '80%' },
@@ -25,6 +25,7 @@ const AboutMe = () => {
   ];
 
   return (
+    <Element name="about">
     <section className="about-me pt-28  dark:bg-gray-900 dark:text-white">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Section Title */}
@@ -52,7 +53,7 @@ const AboutMe = () => {
           <div className="">
             <p className="text-lg font-semibold">
             Full-Stack ASP.NET Developer
-            Experienced Software Engineer specializing in Web Application , REST APIs, React, and Next.js.
+            Experienced Software Engineer specializing in Web Application , REST APIs, jQuery, Ajax, React, and Next.js.
             </p>
             <p className="mt-4 text-gray-700 dark:text-gray-400">
             Experienced Software Engineer with over 5+ years of expertise in web application development,
@@ -118,6 +119,7 @@ const AboutMe = () => {
         </div>
       </div>
     </section>
+    </Element>
   );
 };
 

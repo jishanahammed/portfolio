@@ -6,6 +6,9 @@ import Counter from "./components/Counter";
 import AboutMe from "./components/AboutMe";
 import Services from "./components/Services";
 import ProjectList from "./components/Project/ProjectList";
+import Technologies from "./components/Technologies";
+import ContactusTec from "./components/ContactusTec";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -16,9 +19,10 @@ function App() {
        <AboutMe/>
        <Services/>
        <ProjectList/>
-       <ContactUs/>
+     <ContactusTec/>
    
       </div>
+      <ScrollToTopButton/>
     </Layout>
   );
 }

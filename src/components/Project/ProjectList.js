@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
 import ProjectCard from './ProjectCard';
+import { Element } from "react-scroll";
 const projects = [
   {
     title: 'Clienty System',
@@ -57,12 +58,20 @@ const projects = [
      "Developed a multi-user Pharmacy Management System for medicine purchase, inventory, and sales tracking, with modules for supplier, customer, and payment management. Implemented due payment tracking, expiry management, and advanced reporting with server-side pagination, filters, and search functionality.",
     technologies: 'ASP.NET Core, MSSQL, React.js',
     liveSite: 'https://digitalpharmacy.xyz/',
+  },
+  {
+    title: 'E-Dormitory Management System',
+    description:
+      'The E-Dormitory Management System for LACT streamlines dormitory operations, allowing users to book rooms, order snacks, and reserve equipment efficiently. Built with ASP.NET Core, it offers seamless admin control over bookings, orders, and analytics. The system is scalable, secure, and accessible 24/7, reducing manual tasks and ensuring data privacy.',
+    technologies: 'ASP.NET Core, HTML, CSS, jQuery, Ajax, MSSQL',
+    liveSite: 'https://edrom.minisoftpark.com/',
   }
 ];
 
 const ProjectList = () => {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-900">
+    <Element name="projects">
+    <section className="pt-20 pb-32 bg-gray-100 dark:bg-gray-900">
       <div className="container max-w-7xl mx-auto px-6">
         <SectionTitle title="Showcase Your Talent with our Latest Works" subtitle="My Projects" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -72,6 +81,7 @@ const ProjectList = () => {
         </div>
       </div>
     </section>
+    </Element>
   );
 };
 

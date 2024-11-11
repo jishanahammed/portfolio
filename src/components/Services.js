@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Element } from "react-scroll";
 
 const services = [
     {
@@ -63,6 +63,7 @@ const services = [
 
 const Services = () => {
     return (
+      <Element name="services">
         <section className="services py-16 bg-gray-50 dark:bg-gray-900 dark:text-gray-50">
           <div className="container max-w-7xl mx-auto px-4">
             {/* Section Header */}
@@ -113,6 +114,7 @@ const Services = () => {
             </div>
           </div>
         </section>
+        </Element>
       );
 };
 

@@ -62,28 +62,46 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex items-center">
+        <Link
+                to="home"
+                smooth={true}
+                duration={700} // Adjust duration for smoothness
+                offset={-80} // Offset for sticky navbar height
+              >
           <img
             src={logo}
             alt="My Portfolio"
             className="h-10 w-auto cursor-pointer"
           />
+          </Link>
+       
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 font-medium">
-          {["Home", "Services", "Project", "Contact Us"].map((item, index) => (
-            <li key={index} className="hover:text-blue-400 dark:text-gray-100 cursor-pointer">
+          {[
+            { name: "Home", to: "home" },
+            { name: "About Me", to: "about-me" },
+            { name: "Services", to: "services" },
+            { name: "Projects", to: "projects" },
+            { name: "Contact Us", to: "contact-us" }
+          ].map((item, index) => (
+            <li key={index}>
               <Link
-                to={item.toLowerCase().replace(/\s+/g, "-")}
+                to={item.to}
                 smooth={true}
-                duration={500}
-                className="cursor-pointer hover:text-blue-500"
+                duration={700} // Adjust duration for smoothness
+                offset={-80} // Offset for sticky navbar height
+                  spy={true}
+                activeClass="text-blue-500 border-b-2 border-blue-500"
+                className="cursor-pointer dark:text-gray-50 hover:text-blue-500 "
               >
-                {item}
+                {item.name}
               </Link>
             </li>
           ))}
         </ul>
+
 
         {/* Toggle Dark Mode & Fullscreen */}
         <div className="flex items-center space-x-4">
@@ -106,20 +124,29 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <ul className="md:hidden bg-gray-50 dark:bg-gray-800 text-center py-4 space-y-4">
-          {["Home", "Services", "Project", "Pricing", "Testimonial", "Contact Us"].map((item, index) => (
-            <li key={index} className="hover:text-blue-400 cursor-pointer">
-              <Link
-                to={item.toLowerCase().replace(/\s+/g, "-")}
-                smooth={true}
-                duration={500}
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <ul className="md:hidden bg-gray-100 dark:bg-gray-800 py-4 text-center space-y-4">
+        {[
+          { name: "Home", to: "home" },
+          { name: "About Me", to: "about-me" },
+          { name: "Services", to: "services" },
+          { name: "Projects", to: "projects" },
+          { name: "Contact Us", to: "contact-us" }
+        ].map((item, index) => (
+          <li key={index}>
+            <Link
+              to={item.to}
+              smooth={true}
+              duration={700}
+              offset={-80}
+                spy={true}
+                activeClass="text-blue-500"
+              onClick={() => setIsOpen(false)}
+            >
+              {item.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
       )}
     </nav>
   );
